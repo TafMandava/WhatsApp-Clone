@@ -8,6 +8,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 20px;
+  border-right: 1px solid lightgray;
+  /* Add a minimum width so that it doesn't get cramped */
+  min-width: 10vw;
 }
 
 .sidebar__headerLeft {
@@ -16,4 +20,9 @@
 .sidebar__headerRight {
   display: flex;
   align-items: center;
+}
+
+.sidebar__headerRight > .MuiSvgIcon-root {
+  margin-right: 2vw;
+  font-size: 24px !important;
 }

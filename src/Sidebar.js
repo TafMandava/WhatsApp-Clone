@@ -11,7 +11,7 @@ function Sidebar() {
            <div className="sidebar__header">
                <div className="sidebar__headerLeft">
                    <Avatar
-                       src=""          
+                       src="https://lh3.googleusercontent.com/ogw/ADGmqu8BNzcpdkHqJtSFO9SHL2hb_EP-HeqabUxqxtuT=s192-c-mo"          
                    />
                </div>
                <div className="sidebar__headerRight">
