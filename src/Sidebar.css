@@ -45,7 +45,6 @@
 }
 
 .sidebar__searchContainer > input {
-  width: 70%;
   object-fit: contain;
   border: none;
   color: gray;
