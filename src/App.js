@@ -62,11 +62,24 @@ function App() {
         The channel is linked to what we push in the trigger pusher.trigger('messages', 'inserted', ... where the channel is equivalent to messages and the event is inserted
     */
     const channel = pusher.subscribe('messages');
-    channel.bind('inserted', (data) => {
-      alert(JSON.stringify(data));
+    channel.bind('inserted', (newMessage) => {
+      alert(JSON.stringify(newMessage));
+      /*
+          Keep all current messages, but also append the new messages (data)
+      */
+     setMessages([...messages, newMessage]);
     });
+    
+    /*
+        Clean up function should unbind everything and unsubscribe
+        Even when the messages change we need to make sure that we have one subscriber
+    */
+    return () => {
+      channel.unbind_all();
+      channel.unsubscribe();
+    }
 
-  }, []);
+  }, [messages]);
 
   console.log("Messages >>> ", messages);
 
