@@ -63,7 +63,7 @@ function App() {
     */
     const channel = pusher.subscribe('messages');
     channel.bind('inserted', (newMessage) => {
-      alert(JSON.stringify(newMessage));
+      /* alert(JSON.stringify(newMessage)); */
       /*
           Keep all current messages, but also append the new messages (data)
       */
