@@ -41,4 +41,13 @@ export default instance;
         -- Scroll down to Domains
             --  Type in browser https://whatsapp--mern--backend.herokuapp.com/
                     -- It should say "Hello World!"
+
+    Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+
+    197.245.176.254/32
+
+    Configuring an environment variable in my Heroku application:
+
+    heroku config:set MONGODB_URI="mongodb+srv://admin:2Wj2yj6U4Maj0FgS@cluster0.7trec.mongodb.net/whatsappdb?retryWrites=true&w=majority"
+
 */
